@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Store</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Box-Sizing */
+        }
+
+        /* Header/Navigation */
+        .header {
+            background-color: #333; /* Background Properties */
+            color: white;
+            padding: 15px; /* Box Model Properties */
+            text-align: center;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px; /* Box Model Properties */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400/9b59b6/ffffff?text=Great+Products+Awaiting'); /* Background Properties */
+            background-size: cover; /* Background Properties */
+            text-align: center;
+            padding: 100px 20px; /* Box Model Properties */
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3em; /* Text Formatting */
+            margin-bottom: 10px; /* Box Model Properties */
+        }
+
+        .hero p {
+            font-size: 1.2em; /* Text Formatting */
+            margin-bottom: 20px; /* Box Model Properties */
+        }
+
+        .hero .btn {
+            background-color: #2ecc71; /* Background Properties */
+            color: white;
+            padding: 10px 20px; /* Box Model Properties */
+            text-decoration: none;
+            border-radius: 5px; /* Rounded Borders */
+            display: inline-block;
+        }
+
+        /* Product Section */
+        .products {
+            max-width: 960px;
+            margin: 40px auto; /* Box Model Properties */
+            padding: 0 20px;
+            display: grid; /* Grid Layout */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive Grid */
+            gap: 20px; /* Box Model Properties */
+        }
+
+        .product-card {
+            background-color: white; /* Background Properties */
+            border: 1px solid #ddd; /* Box Model Properties */
+            border-radius: 8px; /* Rounded Borders */
+            padding: 15px; /* Box Model Properties */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box-Shadow */
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px; /* Box Model Properties */
+        }
+
+        .product-card h3 {
+            font-size: 1.3em; /* Text Formatting */
+            margin-bottom: 8px; /* Box Model Properties */
+        }
+
+        .product-card .price {
+            font-weight: bold; /* Text Formatting */
+            color: #e74c3c;
+            margin-bottom: 15px; /* Box Model Properties */
+        }
+
+        .product-card .btn {
+            background-color: #3498db; /* Background Properties */
+            color: white;
+            padding: 8px 15px; /* Box Model Properties */
+            text-decoration: none;
+            border-radius: 4px; /* Rounded Borders */
+            display: inline-block;
+            transition: background-color 0.3s ease; /* Hover Effects */
+        }
+
+        .product-card .btn:hover {
+            background-color: #2980b9; /* Hover Effects */
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333; /* Background Properties */
+            color: white;
+            text-align: center;
+            padding: 20px; /* Box Model Properties */
+            margin-top: 50px; /* Box Model Properties */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Our Store!</h1>
+        <p>Find the perfect items for your needs.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </section>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGhuwE3fQL4ad0P8UqYFn67h24h0b1ilMmLw&s"
+        </h3>Awesome Widget</h3>
+            <p class="price">$19.99</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://www.wordstream.com/wp-content/uploads/2021/07/amazon-seo-product-images.jpg" 
+            <h3>Super Gadget</h3>
+            <p class="price">$49.50</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://www.amzonestep.com/front/images/img/whitebg/wg1.webp" 
+            <h3>Cool Item</h3>
+            <p class="price">$12.00</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9_mCnb6i0koJID_RkcW1zO7RZGnpORvj1f6kzb6yBT0vFt1XWBm186smOFikJKteZhVI&usqp=CAU" 
+            <h3>Handy Tool</h3>
+            <p class="price">$35.75</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Simple Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
